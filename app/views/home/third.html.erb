@@ -1,0 +1,9 @@
+third page <%= Time.now.strftime('%Y-%m-%d %H:%M:%S') %>
+<% content_for :header do %>
+<script>
+$(function(){
+$("li a").removeClass("selected");
+$("li a:last").addClass("selected");
+})
+</script>
+<% end %>

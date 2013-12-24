@@ -1,0 +1,9 @@
+second page <%= Time.now.strftime('%Y-%m-%d %H:%M:%S') %>
+<% content_for :header do %>
+<script>
+$(function(){
+$("li a").removeClass("selected");
+$("li a:eq(1)").css("color","green")
+})
+</script>
+<% end %>
